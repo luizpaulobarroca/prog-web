@@ -1,0 +1,46 @@
+button {
+  outline: none;
+  &:active {
+    background-color: lighten($primary, 4%);
+  }
+  &:hover,
+  &:focus {
+    background-color: lighten($primary, 2%);
+  }
+  border-radius: 0;
+}
+
+.input-error {
+  input {
+    border-color: $danger;
+    &:focus {
+      border-color: $danger;
+    }
+  }
+  .error-icon {
+    font-size: 18px;
+    position: absolute;
+    z-index: 10;
+    top: -13px;
+    right: 8px;
+  }
+}
+
+.options-holder {
+  .option {
+    margin-right: 10px;
+  }
+}
+
+.table-holder {
+  overflow: auto;
+}
+
+.button-container {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.pre-formatted {
+  white-space: pre-wrap;
+}
